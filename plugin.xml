@@ -8,8 +8,8 @@
     <description>Cordova Device Accounts Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,device,account,email</keywords>
-    <repo>https://github.com/loicknuchel/cordova-device-accounts.git</repo>
-    <issue>https://github.com/loicknuchel/cordova-device-accounts/issues</issue>
+    <repo>https://github.com/airstep/cordova-device-accounts.git</repo>
+    <issue>https://github.com/airstep/cordova-device-accounts/issues</issue>
 
     <js-module src="www/DeviceAccounts.js" name="DeviceAccounts">
         <clobbers target="plugins.DeviceAccounts" />
@@ -19,11 +19,11 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="DeviceAccounts" >
-                <param name="android-package" value="org.loicknuchel.cordova.deviceaccounts.DeviceAccounts"/>
+                <param name="android-package" value="org.tgs.cordova.deviceaccounts.DeviceAccounts"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/DeviceAccounts.java" target-dir="src/org/loicknuchel/cordova/deviceaccounts" />
+        <source-file src="src/android/DeviceAccounts.java" target-dir="src/org/tgs/cordova/deviceaccounts" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
